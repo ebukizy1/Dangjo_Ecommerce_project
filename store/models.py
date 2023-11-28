@@ -20,7 +20,6 @@ class Product(models.Model):
 
 class Collection(models.Model):
     title = models.CharField(max_length=225)
-    featured_product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True, related_name='+')
 
 
 class Customer(models.Model):
